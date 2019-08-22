@@ -3,7 +3,7 @@ class Application
   def call(env)
     resp = Rack::Response.new
 
-    time = Time.now
+    time = Time.hour
 
     if num_1==num_2 && num_2==num_3
       resp.write "You Win"
